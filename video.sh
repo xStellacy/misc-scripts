@@ -3,7 +3,6 @@
 if [ $1 == "end" ]
 then
 pid="$(ps -C ffmpeg -o pid=)"
-echo "$pid"
 echo "$pid" | while read line
 do
     kill -2 "$line"
