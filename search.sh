@@ -1,9 +1,9 @@
 #!/bin/bash
 query=$(echo "Search" | dmenu)
 echo "$query"
-if [ "$query" == "Search" ]
+if [ "$query" == "Search" ] || [ "$query" == "" ]
 then
     exit
 else
-icecat -new-tab --url https://lite.qwant.com/?q="$query"
+firefox -new-tab --url https://search.unlocked.link/search?q="$query"
 fi
