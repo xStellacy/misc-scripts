@@ -1,5 +1,5 @@
 #!/bin/bash
-dir=(~//Pictures/Wallpapers/)
+dir=(~/Pictures/Wallpapers/)
 picture=$(ls $dir | shuf | head -n1)
 
 xwallpaper --zoom "$dir$picture"
