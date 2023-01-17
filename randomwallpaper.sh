@@ -1,7 +1,6 @@
 #!/bin/bash
-dir=(/home/ShutaStella/Pictures/Wallpapers/)
+dir=(~//Pictures/Wallpapers/)
 picture=$(ls $dir | shuf | head -n1)
-xwallpaper --zoom "$wal"
 
 xwallpaper --zoom "$dir$picture"
 chooseWallpaper(){
